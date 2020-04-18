@@ -1,0 +1,24 @@
+---
+
+- name: install common packages
+  package:
+    state: present
+    name:
+      - curl
+      - gnupg2
+      - vim
+
+- name: configure IPv4 service address
+  notify: reboot
+  template:
+    src: service_ip4.j2
+    dest: /etc/network/interfaces.d/service_ip4
+
+- name: configure IPv6 service address
+  notify: reboot
+  template:
+    src: service_ip6.j2
+    dest: /etc/network/interfaces.d/service_ip6
+
+- name: flush handlers
+  meta: flush_handlers

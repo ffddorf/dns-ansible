@@ -1,0 +1,3 @@
+[submodule "roles/knot-resolver"]
+	path = roles/knot-resolver
+	url = https://github.com/ffddorf/knot-resolver-ansible

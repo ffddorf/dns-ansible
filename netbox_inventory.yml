@@ -1,0 +1,4 @@
+plugin: netbox
+query_filters:
+  - role: dns-resolver
+  - status: active

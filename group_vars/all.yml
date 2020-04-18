@@ -1,0 +1,7 @@
+---
+ansible_python_interpreter: /usr/bin/python3
+ansible_user: admin
+service_ip4: 45.151.166.26
+service_ip6: 2001:678:b7c::26
+kresd_prefix_ip4:  10.0.0.0/8
+kresd_prefix_ip6:  2001:678:b7c::/48
