@@ -3,5 +3,5 @@
   become: yes
   become_user: root
   roles:
-    - { role: common }
-    - { role: knot-resolver, kresd_instances: 3 }
+    - common
+    - knot-resolver
